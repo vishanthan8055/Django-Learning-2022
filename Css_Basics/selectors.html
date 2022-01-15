@@ -1,0 +1,88 @@
+<!-- Universal selector
+Selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces.
+Syntax: * ns|* *|*
+Example: * will match all the elements of the document.
+
+Type selector
+Selects all elements that have the given node name.
+Syntax: elementname
+Example: input will match any <input> element.
+
+Class selector
+Selects all elements that have the given class attribute.
+Syntax: .classname
+Example: .index will match any element that has a class of "index".
+
+ID selector
+Selects an element based on the value of its id attribute. There should be only one element with a given ID in a document.
+Syntax: #idname
+Example: #toc will match the element that has the ID "toc".
+
+Attribute selector
+Selects all elements that have the given attribute.
+Syntax: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]
+Example: [autoplay] will match all elements that have the autoplay attribute set (to any value). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <style>
+        /* Css Selectors */
+        /* Type selector */
+        body{
+            background-color: aquamarine;
+            border: 10px solid rebeccapurple;
+        }
+        h1{
+            background-color: red;
+            text-align: center;
+        }
+        /* ID selector */
+        #main_para{
+            
+            color: orange;
+        }
+        /* class selectors */
+        .center{
+            color: blue;
+        }
+        /* select specific type in class */
+        p.center{
+        text-align: left;
+        background-color: orchid;
+          
+        }
+        h1.center{
+            text-align: right;
+            background-color: orange;
+        }
+         .large{
+             font-size: larger;
+         }
+         /* Apply for every items */
+        *{
+            border: 10px solid black;
+            padding: 2px;
+        }
+        h1,p{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Started CSS
+    </h1>
+    <h2>Non Css Styled</h2>
+    <p id="main_para">I am Here To recall my CSS skills which i had learned before a couple of Years</p>
+    <h1 class="center">This heading will not be affected</h1>
+    <p class="center">This is center class</p> 
+    <p class="large"> This is large class</p>
+    <!-- merge the specs of two classes -->
+    <p class="center large">Combo of Center and large class</p>
+    
+</body>
+</html>

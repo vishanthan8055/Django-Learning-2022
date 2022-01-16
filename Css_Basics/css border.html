@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css borders</title>
+    <style>
+        h1{
+            border-style: dashed;
+        }
+        .b_width{
+            border-style: solid;
+            border-width: 5px;
+        }
+        .side_width{
+            border-style: solid;
+  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+        }
+        .color_border{
+            border-style: solid;
+            border-width: 10px;
+            border-color: red; 
+        }
+        .mixed{
+            border-style: solid;
+            border-width: 20px;
+  border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+        }
+        .individual_sides{
+            border-width: 10px;
+            border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+        }
+        .border_short{
+            border: 10px dashed blue;
+        }
+        .round_border{
+            border: 12px solid red;
+            border-radius: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Css borders</h1>
+    <h2 class="b_width">Border Width</h2>
+    <h2 class="side_width">Side border width</h2>
+    <h2 class="color_border">Colored border</h2>
+    <h2 class="mixed">Mixed color Border</h2>
+    <h2 class="individual_sides">Individual sides border1</h2>
+    <h2 class="border_short">Short border css code</h2>
+    <h2 class="round_border">Rouded border</h2>
+    <h2 class=""></h2>
+
+</body>
+</html>

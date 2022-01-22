@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        .container{
+            /* for wrap */
+            /* width: 200px; */
+            /* for align conttent */
+            /* height: 500px; */
+            border: 5px solid black;
+            padding: 5px;
+        }
+        .box{
+            border: 5px solid red;
+            background-color: red;
+            padding: 10px;
+            margin: 5px;
+            font-size: 50px;
+        }
+        /* flex grow */
+        .box{
+            margin: 1px;
+            flex-grow: 1;
+        }
+        .box:nth-child(2){
+            flex-grow: 2;
+        }
+        /* Flex stylings */
+        .container{
+            display: flex;
+            /* display direction default row */
+            flex-direction: row;
+            /* all elements wrapped properly */
+            flex-wrap: wrap;
+            /* justify container */
+            /* justify-content: space-around; */
+            /* align content */
+            /* default is strech */
+            /* align-content: center; */
+        }
+        /* flex-order */
+        /* .box:nth-child(1){
+            order: 3;
+        }
+        .box:nth-child(2){
+            order: 5;
+        }
+        .box:nth-child(3){
+            order: 4;
+        }
+        .box:nth-child(4){
+            order: 1;
+        }
+        .box:nth-child(5){
+            order: 2;
+        } */
+
+    </style>
+</head>
+<body>
+    <h2>Flex</h2>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+</html>

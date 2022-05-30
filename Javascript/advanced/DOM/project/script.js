@@ -18,10 +18,12 @@ function hover_event(row,col){
     var block = row.querySelector(col)
     block.addEventListener("mouseover",function(){
         block.style.color = "blue";
+        block.style.fontSize = "100px";
 
       })
       block.addEventListener("mouseout",function(){
         block.style.color = "black";
+        block.style.fontSize = "50px";
       })
     }
 

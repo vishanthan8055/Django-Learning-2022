@@ -1,0 +1,12 @@
+td,th{
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 200px;
+}
+.redDrop{
+    background-color: red;
+}
+.blueDrop{
+    background-color: blue;
+}

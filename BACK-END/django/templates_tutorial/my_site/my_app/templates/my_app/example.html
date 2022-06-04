@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+</head>
+<body>
+    <h1 style="background-color: black; color: red;">Example html templates </h1>
+    <h1><a href="{% url 'my_app:variable' %}">Click me to go to variable</h1>
+</body>
+</html> {% endcomment %}
+
+{% block content %}
+<h1>this is inside the block example.html</h1>
+<img src = "{% static 'my_app/django.png' %}" alt = 'my_image'>
+{% endblock %}

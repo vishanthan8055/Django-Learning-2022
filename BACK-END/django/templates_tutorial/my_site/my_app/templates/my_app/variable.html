@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+<body>
+    <h1>Variable.html</h1>
+    {% comment %} <ul>
+        {% for num in some_list %}
+            {% if num == 2%}
+                <li>TWO</li>
+            {%else%}
+                <li>{{num}}</li>
+            {%endif%}
+        {% endfor%}
+    </ul> {% endcomment %}
+    {% comment %} <h1> {{some_list}}</h1>
+
+    <ul>
+    {% for item in some_list%} 
+        <li>{{item}}</li>
+
+
+    {% endfor %}
+    </ul>
+    <ul>
+    {% for k,v in some_dict.items %}
+    <li>{{k}}:{{v}}</li>
+    {% endfor %}
+    </ul>
+    {% if user_logged_in %}
+    <h1>welcome back!! you are logged in!</h1>
+    
+    {% endif %} {% endcomment %}
+    {% comment %} <h2>my firstname is {{first_name | lower|capfirst}} and my lastname is {{last_name | upper}}</h2>
+    <h2>{{some_dict.inside_key}}</h2> {% endcomment %}
+    <!-- <h2>{# this is a comment#}</h2> we can use html comment like this both is fine--> 
+</body>
+</html>
